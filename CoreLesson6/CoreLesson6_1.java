@@ -9,7 +9,6 @@ package CoreLesson6;
     (этого достаточно для выполнения д/з).
 
     After setting your password, you will be able to log in at https://developer.accuweather.com/user in the future using:
-    username: Ekaterina / lohay57612@topyte.com
 
     Once you are logged in, you can create an App and get your API Key using
     these basic instructions: http://developer.accuweather.com/getting-started
@@ -32,7 +31,6 @@ public class CoreLesson6_1 {
 
         // Вариант получения JSON через RestAssured
 
-        // из видеоурока, но у меня не запускается (ошибки под комментами в низу файла)
         // файрволл пропускает, есть подозрение, что не так настроены dependency (если создаю проект maven (pom),
         // то не вижу проекты java, при попытке их как-то объединить, слетают конфигурации java (запуск main)
         // okhttp и rest assured - по методичке file -> project structure -> modules -> Dependencies -> '+'
@@ -44,25 +42,4 @@ public class CoreLesson6_1 {
         System.out.println(response.asPrettyString());
     }
 }
-/*
-    C:\Users\Екатерина\.jdks\openjdk-18.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\lib\idea_rt.jar=60882:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Екатерина\IdeaProjects\Lessons\out\production\Lessons;C:\Users\Екатерина\IdeaProjects\lombok-1.18.24.jar;C:\Users\Екатерина\IdeaProjects\okhttp-4.9.3.jar;C:\Users\Екатерина\IdeaProjects\rest-assured-5.0.1.jar CoreLesson6.CoreLesson6_1
-    Exception in thread "main" java.lang.NoClassDefFoundError: groovy/lang/GroovyObject
-        at java.base/java.lang.ClassLoader.defineClass1(Native Method)
-        at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
-        at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
-        at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
-        at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
-        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
-        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
-        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-        at io.restassured.RestAssured.<clinit>(RestAssured.java:355)
-        at CoreLesson6.CoreLesson6_1.main(CoreLesson6_1.java:40)
-    Caused by: java.lang.ClassNotFoundException: groovy.lang.GroovyObject
-        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-        ... 11 more
- */
-
 
